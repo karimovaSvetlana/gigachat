@@ -38,3 +38,5 @@ class Chat(BaseModel):
     """Флаги, включающие особенные фичи"""
     storage: Optional[Storage] = None
     """Данные для хранения контекста на стороне GigaChat"""
+    reasoning_effort: Optional[Literal["medium"]] = None
+    """Параметр для использования рассуждений в GigaChat в модели GigaChat-2-Reasoning"""

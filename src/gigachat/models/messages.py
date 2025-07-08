@@ -12,6 +12,8 @@ class Messages(BaseModel):
     """Роль автора сообщения"""
     content: str = ""
     """Текст сообщения"""
+    reasoning_content: str = ""
+    """Текст рассуждения"""
     function_call: Optional[FunctionCall] = None
     """Вызов функции"""
     name: Optional[str] = None
